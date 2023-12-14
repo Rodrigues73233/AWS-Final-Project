@@ -1,0 +1,123 @@
+.clicked-link {
+  color: #3d405b;
+  border-bottom: 2px solid #1e30f3;
+  padding-bottom: 5px;
+}
+
+.image-logo-login {
+  width: 3rem;
+}
+
+.main-title {
+  text-align: center;
+}
+
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-page-login {
+  font-size: 3rem;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.text-login {
+  font-weight: bold;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-submit-form {
+  border: none;
+  margin: 0;
+}
+
+.forgot-password {
+  font-size: 13px;
+  text-align: left;
+}
+
+#form-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-about {
+  text-align: justify;
+}
+
+.main-container-form {
+}
+
+/* Submit Button */
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 15px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #1e30f3 0%, #e21e80 100%);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}

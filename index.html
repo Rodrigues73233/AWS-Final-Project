@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Cloud Fit</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/cloud-sync.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/login.css">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+          <a class="navbar-brand" href="">
+            <img
+              class="logo_image"
+              src="./assets/images/cloud-sync.png"
+              alt=""
+            /><span class="fw-bolder text-primary">Cloud Fit</span></a
+          >
+          
+          
+        </div>
+      </nav>
+      
+      <section id="form-section" class="h-100 " style="background-color: #eee;">
+        <div class="main-container-form container  h-100">
+          <div class="row d-flex justify-content-center align-items-center h-500">
+            <div class="col-xl-10">
+              <div class="card rounded-3 text-black">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="card-body p-md-5 mx-md-4">
+      
+                      <div class="text-center">
+                        <img class="image-logo-login" src="./assets/images/cloud-sync.png" alt="">
+                        <h4 class="mt-1 mb-5 pb-1"><span class="form-title text-gradient d-inline">Login</span></h4>
+                      </div>
+                      
+                      <form id="meuFormulario">
+                        <p class="text-login">Faça login para acessar sua conta!</p>
+                      
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="usuario">Usuário</label>
+                          <input type="email" id="usuario" name="usuario" class="form-control" placeholder="Informe o E-mail/Usuário" />
+                        </div>
+                      
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="senha">Senha</label>
+                          <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" />
+                        </div>
+                      
+                        <div class="submit-form text-center pt-1 mb-5 pb-1">
+                          <button class="button-submit-form btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" id="send" onclick="enviarDados()"><span>Log in</span></button>
+                          <a class="forgot-password text-muted" href="#!">Esqueceu a senha?</a>
+                        </div>
+                      </form>
+      
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h5 class="mb-4">Bem-vindo à Cloudfit: <br> O Seu Portal de Transformação Fitness!</h5>
+                      <h7 class="mb-3">Entre em um mundo de fitness revolucionário com a Cloudfit, onde seus objetivos se tornam conquistas e sua jornada de bem-estar é elevada a novos patamares! 🚀</h7>
+                      <br>
+                      <br>
+                      <h7>Desperte Seu Potencial Fitness Agora!</h7>
+                      <p class="text-about small mb-4">
+                        <br>
+                        🏋️‍♀️ Treinos Personalizados: Moldados para você, seus objetivos e seu ritmo.
+                        <br>
+                        🤸 Variedade Ilimitada: Acesse uma biblioteca expansiva de treinos, desde ioga relaxante até treinos de alta intensidade. 
+                        <br>
+                        🌐 Acesso de Qualquer Lugar: Treine quando e onde quiser com nossa plataforma na nuvem. Sua academia, seu horário!</p>
+                        <p class="text-about small mb-0">⚡️Cloudfit: Sua Jornada Fitness Começa Agora!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="main-footer bg-white py-4 mt-auto">
+      <div class="container px-5">
+          <div class="col-auto">
+            <div class="copyright small m-0">
+              Copyright &copy; Cloud Fit 2023
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="./js/login.js"></script>
+    <script src="./js/exibirDadosUsuarioNaSegundaPagina.js"></script>
+  </body>
+</html>

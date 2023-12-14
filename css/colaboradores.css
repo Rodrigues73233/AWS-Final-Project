@@ -1,0 +1,245 @@
+:root {
+  /* Colors */
+  --main-green: #79dd09;
+  --main-green-rgb-015: rgba(121, 221, 9, 0.1);
+  --main-yellow: #bdbb49;
+  --main-yellow-rgb-015: rgba(189, 187, 73, 0.1);
+  --main-red: #bd150b;
+  --main-red-rgb-015: rgba(189, 21, 11, 0.1);
+  --main-blue: #0076bd;
+  --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
+
+  /* Main-Font */
+  --bs-body-font-family: 'Plus Jakarta Sans';
+}
+
+/* Responsividade */
+
+/* ----------------- */
+
+.title {
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-cards {
+}
+
+.social {
+  margin-top: auto;
+}
+
+/* Configurações para fazer o carrossel no JS */
+
+/* -------------------------------------------------- */
+
+.clicked-link {
+  color: #3d405b;
+  border-bottom: 2px solid #1e30f3;
+  padding-bottom: 5px;
+}
+
+.main-container-colaboradores {
+  background: #eeeeee;
+}
+
+/* Content */
+
+#team-title {
+  color: #1e30f3;
+  font-weight: bold;
+}
+
+.team-boxed {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.team-boxed p {
+  color: #7d8285;
+}
+
+.team-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .team-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.team-boxed .people {
+  padding: 50px 0;
+}
+
+.team-boxed .item {
+  text-align: center;
+}
+
+.team-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  min-height: 720px;
+}
+
+.team-boxed .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.team-boxed .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.team-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.team-boxed .item img {
+  max-width: 160px;
+}
+
+.team-boxed .social {
+  font-size: 24px;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.8;
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
+
+/* Download CV */
+
+.download-cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button {
+  padding: 0.8rem 4rem;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background-color: #1e30f3;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.button .text {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.3rem;
+  transition: 0.4s ease-in-out;
+  color: #fff;
+}
+
+.svg {
+  transform: translateY(-20px) rotate(30deg);
+  opacity: 0;
+  width: 2rem;
+  transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.button:hover .svg {
+  display: inline-block;
+  transform: translateY(0px) rotate(0deg);
+  opacity: 1;
+}
+
+.button:hover .text {
+  opacity: 0;
+}
+
+.button:active {
+  scale: 0.97;
+}
+
+/* --------- */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-image {
+  min-width: 160px !important;
+  min-height: 160px !important;
+  max-height: 160px !important;
+}
+
+/* Responsividade */
+
+@media (max-width: 1400px) {
+  .team-boxed .item .box {
+    min-height: 780px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .team-boxed .item .box {
+    min-height: 850px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-boxed .item .box {
+    min-height: 0px;
+  }
+}
